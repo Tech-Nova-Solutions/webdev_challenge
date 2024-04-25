@@ -33,4 +33,18 @@ function mudarCor(){
         mudarCor();
     }
     )
- 
+
+let imagens =['./src/tech_mahindra.jpg', './src/banner.PNG'];
+let index = 0;
+let time = 3000;
+    
+function slideShow() {
+    document.getElementById('imgcar').src = imagens[index];
+    index++;
+    
+        if(index == imagens.length) {
+            index =0;
+        }
+        setTimeout('slideShow()', time);
+}
+slideShow();
