@@ -8,19 +8,18 @@ const senha = 'admin';
 const credencialincorreta = document.querySelector('#credencialincorreta');
 let body = document.querySelector('body');
 
-
-
 btnLogin.addEventListener('click', () => {
     if(emailDigitado.value == email && senhaDigitada.value == senha){
         alert('ok');
         credencialincorreta.innerHTML = '';
+    }else if(emailDigitado.value === '' || senhaDigitada.value === ''){
+        credencialincorreta.innerHTML = 'Não deixe espaços em branco';
+        credencialincorreta.style.color = 'red';
     }else{
         credencialincorreta.innerHTML = 'E-mail e/ou Senha incorretos';
         credencialincorreta.style.color = 'red';
     }
-        
 })
-
 
 function mudarCor(){
     function mudar(numero){
