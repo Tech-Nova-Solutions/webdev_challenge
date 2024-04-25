@@ -1,4 +1,3 @@
-let nomeUsuario = prompt('Seja bem-vindo(a), qual seu nome?')
 let emailDigitado = document.querySelector('#email');
 let senhaDigitada = document.querySelector('#senha');
 let btnLogin = document.querySelector('#btnSubmit');
@@ -10,8 +9,7 @@ let body = document.querySelector('body');
 
 btnLogin.addEventListener('click', () => {
     if(emailDigitado.value == email && senhaDigitada.value == senha){
-        alert('ok');
-        credencialincorreta.innerHTML = '';
+        window.open('dashboard.html');
     }else if(emailDigitado.value === '' || senhaDigitada.value === ''){
         credencialincorreta.innerHTML = 'Não deixe espaços em branco';
         credencialincorreta.style.color = 'red';
@@ -19,7 +17,7 @@ btnLogin.addEventListener('click', () => {
         credencialincorreta.innerHTML = 'E-mail e/ou Senha incorretos';
         credencialincorreta.style.color = 'red';
     }
-})
+});
 
 function mudarCor(){
     function mudar(numero){
@@ -30,8 +28,7 @@ function mudarCor(){
 }
     window.addEventListener('load',function(){
         mudarCor();
-    }
-    )
+});
 
 let imagens =['./src/tech_mahindra.jpg', './src/banner.PNG'];
 let index = 0;
