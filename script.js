@@ -30,7 +30,7 @@ function mudarCor(){
         mudarCor();
 });
 
-let imagens =['./src/tech_mahindra.jpg', './src/banner.PNG'];
+let imagens =['./src/tech_mahindra.jpg', './src/banner.PNG', './src/banner3.jpg', './src/banner4.jpg', './src/banner5.jpg'];
 let index = 0;
 let time = 3000;
     
