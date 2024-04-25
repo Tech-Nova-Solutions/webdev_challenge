@@ -44,3 +44,7 @@ function slideShow() {
         setTimeout('slideShow()', time);
 }
 slideShow();
+
+function paginaInicial() {
+    window.open('index.html');
+}
