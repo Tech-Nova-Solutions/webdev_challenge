@@ -9,8 +9,11 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img src="/src/assets/logo.png" alt="logo TNS" id="logo">
-        <img src="/src/assets/TNS-banner-semfundo.png" alt="Tech Nova Solutions" id="titulo">
+        <div class="cabecalho__titulo">
+            <img src="/src/assets/TNS-banner-semfundo.png" alt="Tech Nova Solutions" id="titulo">
+        </div>
+        
+        <div id="div_menu">
             <nav>
                 <ul class="menu">
                     <li><a href="">Login</a></li>
@@ -18,24 +21,45 @@
                     <li><a href="">Novidades</a></li>
                 </ul>
             </nav>
+        </div>
+        
         
     </header>
+    <button onclick="mudarCor()" id="btnCor">
+        <img src="/src/assets/palette.svg" alt="paleta" id="paleta">
+    </button>
     <div id="img">
         <img src="./src/assets/banner.PNG" alt="banner da empresa" id="carrossel">
 
     </div>
 
+   <!-- <section>
+        <fieldset>
+            <h2>Painel de Administrador da TNS</h2>
+            <h3>Entre com suas credenciais</h3>
+            <p>Email: <input type="email" id="email"></p>
+            <p>Senha: <input type="password" id="senha"></p>
+            <p id="credencialincorreta"></p>
+            <input id="btnSubmit" type="submit" value="Login">
+        </fieldset>
+    </section>-->
     
-    <fieldset>
-        <h2>Painel de Administrador da TNS</h2>
-        <h3>Entre com suas credenciais</h3>
-        <p>Email: <input type="email" id="email"></p>
-        <p>Senha: <input type="password" id="senha"></p>
-        <p id="credencialincorreta"></p>
-        <input id="btnSubmit" type="submit" value="Login">
-    </fieldset>
+    <section class="direcionamento">
+        <h1 class="direcionamento__titulo">Não perca as novidades!</h1>
+        <button onclick="" id="novidades">Ver</button>
+    </section>
+    
 
-    <button onclick="mudarCor()">Alterar o fundo para uma cor aleatória</button>
 
+    <section class="contato">
+        <h2>Siga-nos nas redes sociais!</h2>
+        <a href=""><img src="/src/assets/instagram.svg" class="contato_icones">Instagram</a>
+        <a href=""><img src="/src/assets/facebook.svg" class="contato_icones">Facebook</a>
+        <a href=""><img src="/src/assets/twitter-x.svg" class="contato_icones">X / Twitter</a>
+
+    </section>
+    <footer>
+        <h5>@2024-todos os direitos reservados</h5>
+    </footer>
 </body>
 </html>

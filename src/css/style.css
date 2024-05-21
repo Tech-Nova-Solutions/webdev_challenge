@@ -1,9 +1,11 @@
 :root{
-    --cor-texto1: #cccccc;
-    --vermelho: #ba1f1f;
-    --preto: #131416;
-    --bg-color: white;
-    --header-size: 1.6rem;
+    --bg-color: #F9F9F9;
+    --dark-grey: #2B2B2B;
+    --grey:#525252;
+    --medium-grey:#797979;
+    --light-grey:#A0A0A0;
+
+    --header-size: 1.2rem;
     
 }
 *{
@@ -16,21 +18,31 @@
     width: 100%;
     height: 100px;
     display:flex;
-    justify-content:space-between;
+    justify-content: space-evenly;
     align-items: center;
     background-color: var(--bg-color);
-    gap: 20px;
+    
    
     
 }
-#logo{
-    width: 160px;
-    height: 100px;
+.cabecalho__titulo{
     margin-left: 1rem;
+    width: 550px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-
 }
 #titulo{
+    width: 430px;
+    height: 40px;
+}
+#div_menu{
+    width: 500px;
+    height: 40px;
+    
+    
     
 }
 .menu{
@@ -39,7 +51,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 1rem;
+    margin-right: 2rem;
+    padding-right: 5rem;
    
 }
 nav ul li  {
@@ -50,18 +63,16 @@ nav ul li a{
     width: 150px;
     height: 50px;
     text-decoration: none;
-    color: var(--preto);
+    color: var(--dark-grey);
     font-size: var(--header-size);
-    background: var(--cor-texto1);
-    border-radius: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 nav ul li a:hover{
-    background: var(--preto);
-    color: var(--cor-texto1)
+    color: var(--medium-grey);
 }
 #img{
     height: 100vh;
@@ -69,11 +80,111 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image:linear-gradient(to bottom , var(--dark-grey),var(--light-grey));
 }
 #carrossel{
     width: 90%;
     height: 50vh;
    border-radius: 20px;
-   
+}
 
+.direcionamento{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    background-color: var(--bg-color);
+    
+    
+}
+.direcionamento__titulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    color:var(--dark-grey);
+    
+}
+#novidades{
+    width: 180px;
+    height: 40px;
+    background-color: var(--grey);
+    color:var(--bg-color);
+    border-radius:20px;
+    border: none !important;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    
+}
+#novidades:hover{
+    background-color: var(--dark-grey);
+}
+#btnCor{
+    background:transparent;
+    border:none;
+    border-radius: 3px ;
+    position: fixed;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+#paleta{
+    width: 40px;
+    height: 40px;
+
+
+}
+#paleta:hover{
+    cursor:pointer;
+    transition: all 0.5s;
+    width: 50px;
+    height: 50px;   
+}
+
+.contato{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    background-color: var(--light-grey);
+}
+.contato h2{
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark-grey);
+}
+.contato a{
+    text-decoration: none;
+    color: var(--dark-grey);
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px var(--grey);
+    display: flex;
+    gap:5px;
+    align-items: center;
+}
+.contato a:hover{
+    transition: all 0.3s;
+    font-size: 1.4rem;
+    
+}
+.contato_icones{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--bg-color);
+    color: var(--grey);
 }
