@@ -83,8 +83,7 @@ nav ul li a:hover{
     background-image:linear-gradient(to bottom , var(--dark-grey),var(--light-grey));
 }
 #carrossel{
-    width: 90%;
-    height: 50vh;
+    width: 70%;
    border-radius: 20px;
 }
 
