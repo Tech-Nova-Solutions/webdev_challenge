@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Web Development - Challenge</title>
-    <script src="/src/js/script.js" defer></script>
+    
 </head>
-<body>
+<body id="body">
     <header class="cabecalho">
         <div class="cabecalho__titulo">
             <img src="./src/assets/TNS-banner-semfundo.png" alt="Tech Nova Solutions" id="titulo">
@@ -16,33 +16,26 @@
         <div id="div_menu">
             <nav>
                 <ul class="menu">
-                    <li><a href="">Login</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Novidades</a></li>
+                    <li><a href="./login.html" >Login</a></li>
+                    <li><a href="" >Sobre</a></li>
+                    <li><a href="" >Novidades</a></li>
                 </ul>
             </nav>
         </div>
         
         
     </header>
-    <button onclick="mudarCor()" id="btnCor">
-        <img src="./src/assets/palette.svg" alt="paleta" id="paleta">
+    <button onclick="MudarFundo()" id="btnCor">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="paleta" viewBox="0 0 16 16">
+            <path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+            <path d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8m-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7"/>
+          </svg>
     </button>
     <div id="img">
         <img src="./src/assets/banner.PNG" alt="banner da empresa" id="carrossel">
 
     </div>
 
-   <!-- <section>
-        <fieldset>
-            <h2>Painel de Administrador da TNS</h2>
-            <h3>Entre com suas credenciais</h3>
-            <p>Email: <input type="email" id="email"></p>
-            <p>Senha: <input type="password" id="senha"></p>
-            <p id="credencialincorreta"></p>
-            <input id="btnSubmit" type="submit" value="Login">
-        </fieldset>
-    </section>-->
     
     <section class="direcionamento">
         <h1 class="direcionamento__titulo">Não perca as novidades!</h1>
@@ -52,14 +45,15 @@
 
 
     <section class="contato">
-        <h2>Siga-nos nas redes sociais!</h2>
-        <a href=""><img src="./src/assets/instagram.svg" class="contato_icones">Instagram</a>
-        <a href=""><img src="./src/assets/facebook.svg" class="contato_icones">Facebook</a>
-        <a href=""><img src="./src/assets/twitter-x.svg" class="contato_icones">X / Twitter</a>
+        <h2 class="contato_titulo">Siga-nos nas redes sociais!</h2>
+        <a href="" class="contato_texto"><img src="./src/assets/instagram.svg" class="contato_icones">Instagram</a>
+        <a href="" class="contato_texto"><img src="./src/assets/facebook.svg" class="contato_icones">Facebook</a>
+        <a href="" class="contato_texto"><img src="./src/assets/twitter-x.svg" class="contato_icones">X / Twitter</a>
 
     </section>
-    <footer>
+    <footer id="rodape">
         <h5>@2024-todos os direitos reservados</h5>
     </footer>
+    <script src="./src/js/script.js" ></script>
 </body>
 </html>

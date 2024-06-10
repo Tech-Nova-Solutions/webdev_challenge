@@ -1,34 +1,24 @@
-let emailDigitado = document.querySelector('#email');
-let senhaDigitada = document.querySelector('#senha');
-let btnLogin = document.querySelector('#btnSubmit');
-let btnDarkLight = document.querySelector('#btnDarkLight');
-const email = 'admin@admin.com.br';
-const senha = 'admin';
-const credencialincorreta = document.querySelector('#credencialincorreta');
 let body = document.querySelector('body');
 
-btnLogin.addEventListener('click', () => {
-    if(emailDigitado.value == email && senhaDigitada.value == senha){
-        window.open('dashboard.html');
-    }else if(emailDigitado.value === '' || senhaDigitada.value === ''){
-        credencialincorreta.innerHTML = 'Não deixe espaços em branco';
-        credencialincorreta.style.color = 'red';
-    }else{
-        credencialincorreta.innerHTML = 'E-mail e/ou Senha incorretos';
-        credencialincorreta.style.color = 'red';
-    }
-});
+function verificalogin(){
+    let emailDigitado = document.getElementById('email').value;
+    let senhaDigitada = document.getElementById('senha').value;
+    let credencialIncorreta = document.getElementById('credencialincorreta');
 
-function mudarCor(){
-    function mudar(numero){
-        return(Math.random()* numero);
+    if(emailDigitado === 'admin@admin.com.br' && senhaDigitada === 'admin'){
+        alert('Login Efetuado com sucesso!');
+        window.open('dashboard.html');
     }
-    const cores= `rgb(${mudar(255)}, ${mudar(255)}, ${mudar(255)})`;
-    document.body.style.backgroundColor=cores;
+    else if(emailDigitado === '' || senhaDigitada === ''){
+        credencialIncorreta.innerHTML = 'Preencha os campos vazios!';
+   
+
+    }
+    else{
+        credencialIncorreta.innerHTML = 'E-mail e/ou Senha inválidos';
+      
+    }
 }
-    window.addEventListener('load',function(){
-        mudarCor();
-});
 
 let imagens =['./src/assets/tech_mahindra.jpg', './src/assets/banner.PNG', './src/assets/banner3.jpg', './src/assets/banner4.jpg', './src/assets/banner5.jpg'];
 let index = 0;
@@ -48,3 +38,30 @@ slideShow();
 function paginaInicial() {
     window.open('index.html');
 }
+
+var coresBody = ['#F9F9F9', '#525252'];
+var coresTexto = ['#2B2B2B', '#F9F9F9'];
+var coresFooter = ['#A0A0A0', '#797979'];
+var coresIcones = ['#000', 'F9F9F9'];
+var coresBtn = ['#525252', '#2B2B2B'];
+var indexCor = 0;
+
+function MudarFundo() {
+    var footer = document.getElementById("rodape");
+    var textElements = document.querySelectorAll(".texto,.direcionamento__titulo, .contato_titulo, .contato_texto");
+    var icones = document.querySelectorAll(".contato_icone, .paleta");
+    var botao = document.getElementById('novidades');
+
+    document.body.style.backgroundColor = coresBody[indexCor];
+    footer.style.backgroundColor = coresFooter[indexCor];
+    textElements.forEach(element =>{
+        element.style.color = coresTexto[indexCor];
+    })
+    
+    botao.style.backgroundColor = coresBtn[indexCor];
+    indexCor = (indexCor + 1) % coresBody.length;
+}
+
+
+
+
