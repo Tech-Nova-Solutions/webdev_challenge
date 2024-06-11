@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
     <title>Área de Membros</title>
 </head>
 <body>
-    <header>
+    <header class="cabecalho_login">
         <h2>Área de Membros TNS</h2>
     </header>
-     <section>
-        <fieldset>
+    <section class="page_login">
+        <div class="login">
             
             <h3>Entre com suas credenciais</h3>
             <p>Email: <input type="email" id="email"></p>
             <p>Senha: <input type="password" id="senha"></p>
             <p id="credencialincorreta" style="color:red"></p>
             <input onclick="verificalogin()" id="btnSubmit" type="submit" value="Login">
-        </fieldset>
-    </section>
- 
+        </div>
+    </section>
 
+ 
+    <footer id="rodape">
+        <h5>
+            @2024-todos os direitos reservados
+        </h5>
+    </footer>
     <script src="./src/js/script.js"></script>
 </body>
 </html>
