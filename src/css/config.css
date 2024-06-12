@@ -29,3 +29,7 @@ a:hover,
 button:hover {
     opacity: 0.8;
 }
+
+.hidden {
+    display: none;
+}

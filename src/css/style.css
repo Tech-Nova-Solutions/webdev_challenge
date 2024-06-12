@@ -223,10 +223,6 @@ nav ul li a {
 
 .page_login {
     background: url(../assets/bg-login.jpg) no-repeat center;
-
-    -webkit-backdrop-filter: blur(100px);
-    backdrop-filter: blur(100px);
-
     background-size: 100%;
     height: 100vh;
     width: 100%;
@@ -346,13 +342,42 @@ nav ul li a {
 }
 
 .corredores{
-    width: 100%;
-    height: 100vh;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
 }
 
 footer {
     background-color: var(--blue-color);
 }
+
+.piloto {
+    padding: 1rem 1rem 0 1rem;
+    border-radius: var(--border-radius);
+    background-color: rgb(104, 104, 104);
+    border: none;
+    display: grid;
+    color: white;
+    grid-template-areas: 
+                        "dataNascimento foto"
+                        "localNascimento foto"
+                        "corridaEstreia foto"
+                        "equipe foto"
+                        "nomeCorredor foto"
+                        "sobrenomeCorredor foto";
+}
+
+.lucas { background-color: #000000; } .sergio { background-color: #9CAC2C;}
+.info_pessoal { font-family: var(--default-font); } 
+.dataNascimento { grid-area: dataNascimento; } 
+.localNascimento { grid-area: localNascimento; } 
+.corridaEstreia { grid-area: corridaEstreia; } 
+.equipe { grid-area: equipe; width: 5rem; border-radius: 5px;} 
+.nomeCorredor { grid-area: nomeCorredor; font-size: var(--font-size-12r); } 
+.sobrenomeCorredor { grid-area: sobrenomeCorredor; font-size: var(--font-size-2r);} 
+#imgpiloto { width: 15rem; grid-area: foto; }
 
 footer h5 {
     text-transform: uppercase;
