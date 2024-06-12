@@ -20,7 +20,7 @@ function verificalogin(){
     }
 }
 
-let imagens =['./src/assets/tech_mahindra.jpg', './src/assets/banner.PNG', './src/assets/banner3.jpg', './src/assets/banner4.jpg', './src/assets/banner5.jpg'];
+let imagens =['./src/assets/banner.png', './src/assets/Mahindra_2.jpg', './src/assets/fE_1.webp', './src/assets/formula_E.jpg', './src/assets/Mahindra_racing1.jpg'];
 let index = 0;
 let time = 3000;
     

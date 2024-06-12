@@ -8,27 +8,45 @@
     
 </head>
 <body>
-
+    <header class="cabecalho">
+        <button onclick="paginaInicial()" id="btnbackHome">
+            <img src="./src/assets/icone-homepg.png" alt="voltar para home" id="iconHome">
+        </button>
+        <div class="cabecalho__titulo">
+            <button onclick="window.location.href ='./index.html'" id="btnHome">
+                <img src="./src/assets/TNS-banner-semfundo.png" alt="Tech Nova Solutions" id="titulo">
+            </button>
+        </div>
+        
+        <div id="div_menu">
+            <nav>
+                <ul class="menu">
+                    <li><a href="./login.html" >Login</a></li>
+                    <li><a href="./sobre.html" >Sobre</a></li>
+                    <li><a href="./novidades.html" >Novidades</a></li>
+                    <li><a href="./dashboard.html">Corredores</a></li>
+                </ul>
+            </nav>
+        </div> 
+    </header>
     
 
-    <button onclick="paginaInicial()">Retornar ao menu principal</button>
-
-    <fieldset>
-        <h2>Corredores Brasileiros</h2>
-        <hr>
-        <div>
+ 
+    <section class="corredores">
+        <div class="lucas">
             <h3>Lucas Di Grassi</h3>
-            <p>Empresa - ABT</p>
-            <p>11/08/1984</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam adipisci veniam quis reiciendis, assumenda architecto vitae consectetur dolore rem quia rerum! In nam architecto qui dolor fuga excepturi maiores modi!</p>
+            
         </div>
-        <div>
-            <h3>Sergio Sette Cãmara</h3>
-            <p>Empresa - ERT</p>
-            <p>23/05/1998</p>
-        </div>
-    </fieldset>
+    </section>  
 
-    
+
+    <footer id="rodape">
+        <h5>
+            @2024-todos os direitos reservados
+        </h5>
+
+    </footer>
     <script src="./src/js/script.js" ></script>
 </body>
 </html>
