@@ -1,0 +1,294 @@
+#img {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image:linear-gradient(to bottom , var(--dark-grey),var(--light-grey)); */
+}
+#carrossel{
+    width: 1244px;
+    height: 700px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.direcionamento {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.direcionamento__titulo {
+    font-family: var(--default-font);
+    font-size: var(--font-size-2r);
+    
+}
+
+#novidades {
+    padding: 0.7rem;
+    border-radius: var(--border-radius);
+    border: none;
+    font-family: var(--default-font);
+    font-size: var(--font-size-1r);
+}
+
+#btnCor {
+    border:none;
+    border-radius: var(--border-radius);
+    position: fixed;
+}
+
+.paleta {
+    width: 30px;
+    height: 30px;
+}
+
+.paleta:hover {
+    cursor:pointer;
+    transition: all 0.5s;
+    width: 50px;
+    height: 50px;   
+}
+
+.contato {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+
+.contato h2 {
+    font-size: var(--font-size-2r);
+    font-family: var(--default-font);
+}
+
+.contato a {
+    text-decoration: none;
+    font-size: var(--font-size-1r);
+    font-family: var(--default-font);
+    text-shadow: 1px 1px var(--grey);
+    display: flex;
+    gap:5px;
+    align-items: center;
+}
+
+.contato a:hover {
+    transition: all 0.3s;
+    font-size: var(--font-size-12r);
+    
+}
+
+.contato_icones {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.login {
+    backdrop-filter: blur(100px);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    justify-content: center;
+    gap:40px;
+    border-radius: var(--border-radius);
+    border: none;
+    box-shadow: var(--box-shadow);
+}
+
+.login p {
+    color: white;
+    font-family: var(--default-font);
+}
+
+#btnSubmit {
+    color: black;
+    padding: 0.6rem 1rem;
+    border-radius: var(--border-radius);
+    border: none;
+    font-size: var(--font-size-1r);
+    font-weight: 800;
+    font-family: var(--default-font);
+    cursor: pointer;
+}
+
+#btnSubmit:hover {
+    opacity: 0.8;
+}
+
+#login_msg {
+    font-family: var(--default-font);
+    font-weight: 800;
+    color: white;
+    font-size: var(--font-size-12r);
+    text-transform: uppercase;
+}
+
+#email {
+    width: 150px;
+    height: 20px;
+    border-radius: var(--border-radius);
+    border: none;
+} 
+
+#senha {
+    width: 150px;
+    height: 20px;
+    border-radius: var(--border-radius);
+    border: none;
+}
+
+.page_login {
+    background: url(../assets/bg-login.jpg) no-repeat center;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_sobre {
+    font-size: var(--font-size-2r);
+    text-align: center;
+    font-family: var(--default-font);
+    transform: translateX(-50%);
+}
+
+.secao_sobre {
+    display: flex;
+    align-items: center;
+}
+
+.sobre {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logosobre {
+    right: 35px;
+}
+
+#texto_sobre {
+    left: 40px ;
+    word-wrap: break-word;
+    max-width: 40%;
+    text-align: justify;
+    font-size: var(--font-size-2r);
+    font-family: var(--default-font);
+}
+
+.projetos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.projetos_edge {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+
+}
+
+.projetos_python {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.texto_projetos {
+    right: 30px;
+    word-wrap: break-word;
+    max-width: 50%;
+    text-align: justify;
+    font-size: var(--font-size-1r);
+    font-family: var(--default-font);
+
+}
+
+#edge {
+    width: 400px;
+    height: 400px;
+    left: 100px;
+
+}
+
+#py {
+    left: 30px;
+}
+
+#iconHome {
+    width: 35px;
+    height: 35px;
+    background: transparent;
+}
+
+#btnbackHome {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    left: 20px;
+    border:none;
+}
+
+#btnbackHome:hover {
+    cursor: pointer; 
+}
+
+.corredores{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+}
+
+.piloto {
+    padding: 1rem 1rem 0 1rem;
+    border-radius: var(--border-radius);
+    background-color: rgb(104, 104, 104);
+    border: none;
+    display: grid;
+    color: white;
+    font-family: var(--default-font);
+    grid-template-areas: 
+                        "dataNascimento foto"
+                        "localNascimento foto"
+                        "corridaEstreia foto"
+                        "equipe foto"
+                        "nomeCorredor foto"
+                        "sobrenomeCorredor foto";
+}
+
+
+/* Posicionamento dos itens da classe piloto */
+.lucas { background-color: #000000; } .sergio { background-color: #9CAC2C;}
+.info_pessoal { font-family: var(--default-font); } 
+.dataNascimento { grid-area: dataNascimento; } 
+.localNascimento { grid-area: localNascimento; } 
+.corridaEstreia { grid-area: corridaEstreia; } 
+.equipe { grid-area: equipe; width: 5rem; border-radius: 5px;} 
+.nomeCorredor { grid-area: nomeCorredor; font-size: var(--font-size-12r); } 
+.sobrenomeCorredor { grid-area: sobrenomeCorredor; font-size: var(--font-size-2r);} 
+#imgpiloto { width: 15rem; grid-area: foto; }
