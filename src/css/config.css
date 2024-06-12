@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(./reset.css);
 
 :root {
     /* Paleta de cores */
-    --blue-color: #049c4c;
-    --baby-blue: rgb(227,227,227);
+    --primary-color: #049c4c;
+    --secondary-color: rgb(227,227,227);
     /* Padronização */
     /* Tamanhos de fontes */
     --font-size-1r: 1rem;
@@ -28,8 +29,15 @@
 a:hover,
 button:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .hidden {
     display: none;
+}
+
+.active { 
+    background-color: white;
+    border-radius: var(--border-radius);
+    color: var(--primary-color);
 }
