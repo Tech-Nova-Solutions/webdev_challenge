@@ -39,11 +39,11 @@ function paginaInicial() {
     window.open('index.html');
 }
 
-var coresBody = ['#F9F9F9', '#525252'];
+var coresBody = ['#F9F9F9', '#1B331E'];
 var coresTexto = ['#2B2B2B', '#F9F9F9'];
-var coresFooter = ['#A0A0A0', '#797979'];
+var coresFooter = ['#049c4c', '#049c4c'];
 var coresIcones = ['#000', 'F9F9F9'];
-var coresBtn = ['#525252', '#2B2B2B'];
+var coresBtn = ['#F9F9F9', '#1B331E'];
 var indexCor = 0;
 
 function MudarFundo() {
@@ -59,6 +59,7 @@ function MudarFundo() {
     })
     
     botao.style.backgroundColor = coresBtn[indexCor];
+    botao.style.color = coresTexto[indexCor];
     indexCor = (indexCor + 1) % coresBody.length;
 }
 

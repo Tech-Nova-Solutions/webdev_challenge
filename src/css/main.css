@@ -159,15 +159,21 @@
 }
 
 .titulo_sobre {
-    font-size: var(--font-size-2r);
+    font-size: var(--font-size2r);
     text-align: center;
     font-family: var(--default-font);
-    transform: translateX(-50%);
+    
+    font-weight: bolder;
+    align-self: center;
+    
 }
 
 .secao_sobre {
     display: flex;
     align-items: center;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .sobre {
@@ -176,10 +182,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #logosobre {
     right: 35px;
+    width: 900px;
+    height: 500px;
+}
+.integrantes{
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    position: absolute;
+    top: 700px;
+
+}
+.perfil {
+   color: #000000;
+   text-decoration: none;
+    font-family: var(--default-font);
+    font-size: var( --font-size15r);
+}
+.perfil:hover{
+    color: var(--primary-color)
+}
+.sobre_texto{
+    font-size: var(--font-size15r);
+    font-family: var(--default-font);
+    font-weight: 600;
 }
 
 #texto_sobre {
@@ -187,7 +220,7 @@
     word-wrap: break-word;
     max-width: 40%;
     text-align: justify;
-    font-size: var(--font-size-2r);
+    font-size: var(--font-size-12r);
     font-family: var(--default-font);
 }
 
@@ -205,6 +238,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--secondary-color);
+    gap: 100px;
 
 }
 
@@ -215,6 +249,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--secondary-color);
+    gap: 100px;
 }
 
 .texto_projetos {
@@ -235,7 +270,9 @@
 }
 
 #py {
-    left: 30px;
+    left: 100px;
+    width: 500px;
+    height: 400px;
 }
 
 #iconHome {
