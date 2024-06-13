@@ -6,9 +6,10 @@
 
 :root {
     /* Paleta de cores */
-    --primary-color: #049c4c;
+    --primary-color: #1488FF;
     --secondary-color: rgb(227,227,227);
     --text-color:#0F0F0F;
+    --bg-color: #f9f9f9;
     /* Padronização */
     /* Tamanhos de fontes */
     --font-size-1r: 1rem;

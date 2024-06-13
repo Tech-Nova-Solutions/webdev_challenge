@@ -237,7 +237,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--bg-color);
     gap: 100px;
 
 }
@@ -248,7 +248,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--bg-color);
     gap: 100px;
 }
 

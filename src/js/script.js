@@ -39,11 +39,11 @@ function paginaInicial() {
     window.open('index.html');
 }
 
-var coresBody = ['#F9F9F9', '#1B331E'];
+var coresBody = ['#F9F9F9', '#170055'];
 var coresTexto = ['#2B2B2B', '#F9F9F9'];
-var coresFooter = ['#049c4c', '#049c4c'];
+var coresFooter = ['#1488FF', '#1488FF'];
 var coresIcones = ['#000', 'F9F9F9'];
-var coresBtn = ['#F9F9F9', '#1B331E'];
+var coresBtn = ['#F9F9F9', '#170055'];
 var indexCor = 0;
 
 function MudarFundo() {
