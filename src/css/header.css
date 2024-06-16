@@ -8,8 +8,6 @@
 }
 
 .cabecalho__titulo {
-    width: 550px;
-    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,19 +23,12 @@
     border: none;
 }
 
-#div_menu {
-    width: 500px;
-    height: 40px;
-}
-
 .menu {
-    width: 500px;
-    height: 40px;
+    padding: 1rem;
     display: flex;
     column-gap: 3rem;
     justify-content: space-between;
     align-items: center;
-    padding-right: 5rem;
    
 }
 
